@@ -4,6 +4,7 @@ import "@nomicfoundation/hardhat-toolbox";
 import "hardhat-circom";
 // circuits
 import circuits = require('./circuits.config.json')
+import 'dotenv/config';
 
 // set env var to the root of the project
 process.env.BASE_PATH = __dirname;
@@ -22,6 +23,12 @@ const config: HardhatUserConfig = {
       }
     ]
   },
+  networks: {
+    mumbai: {
+      url: `https://rpc.ankr.com/polygon_mumbai`,
+      accounts: ['0cf96fa56f1732132bb3afc1fa37e27385d4283363362b84769a791d31120225']
+    }
+  },
   circom: {
     // (optional) Base path for input files, defaults to `./circuits/`
     inputBasePath: "./circuits",
@@ -31,5 +38,4 @@ const config: HardhatUserConfig = {
     circuits: JSON.parse(JSON.stringify(circuits))
   },
 };
-
 export default config;
