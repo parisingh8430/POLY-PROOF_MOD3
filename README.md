@@ -46,7 +46,7 @@ Signal Inputs: a and b are input signals, and they will be provided externally w
    signal X;
    signal Y;
 
-   // Final Signal output
+ // Final Signal output
    signal output Q;
 
 ```
