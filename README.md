@@ -147,9 +147,9 @@ The code component main = GivenCircuit(); creates a CIRCOM component named main,
 
 ## Authors
 
-Khushi 
-[khushiawadh0829@gmail.com]
-[21CBT1050@cuchd.in]
+Pari
+[pari91802@gmail.com@gmail.com]
+[22BCS16855@cuchd.in]
 
 ## License
 
